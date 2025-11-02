@@ -130,7 +130,22 @@
      
     </form>
 
+ <!-- Privacy consent: required for many privacy regimes -->
+      <div class="full-width">
+        <label class="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          I agree to the <a href="https://privacy-central.securiti.ai/#/notices/3e0b4d47-1381-4a06-a9dd-df12da6fae88" target="_blank" rel="noopener">Privacy Notice</a> and the processing of my data to respond to this inquiry.
+        </label>
+      </div>
 
+      <div class="full-width actions" aria-hidden="false">
+        <button type="submit" class="submit">Submit</button>
+
+        <!-- Make this a non-submitting button (type="button") so it doesn't submit the form -->
+        <button type="button" class="btn-secondary" onclick="window.open('https://privacy-central.securiti.ai/#/notices/3e0b4d47-1381-4a06-a9dd-df12da6fae88', '_blank', 'noopener')">
+          View Privacy Notice
+        </button>
+      </div>
     
     <div class="form-footer">
         <p>We will get back to you as soon as possible.</p>
